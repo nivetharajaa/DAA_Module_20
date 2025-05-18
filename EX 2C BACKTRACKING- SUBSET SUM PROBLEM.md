@@ -5,24 +5,55 @@ To demonstrate that the sum of the subset of a given set is equal to the given s
 
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Define a recursive function subsetSum(arr, n, i, sum, count):
+   a. i: current index
+   b. sum: remaining target sum
+   c. count: number of valid subsets found so far
+
+
+2. If i == n (end of array):
+   a. If sum == 0, increment count
+   b. Return count
+
+3.Recur twice:
+  a. Include arr[i] in the sum → sum - arr[i]
+  b. Exclude arr[i] from the sum → sum remains the same
+
+4. Return the total count of both recursive calls.
+5.Call the function from main with i = 0 and count = 0. 
+   
 
 ## Program:
 ```
-/*
 Program to implement Subset sum problem.
-Developed by: 
-Register Number:  
-*/
+Developed by: Nivetha A
+Register Number: 212222230101 
+
+```
+```
+
+def subsetSum(arr, n, i,sum, count):
+    if i==n:
+        if sum==0:
+            return count+1
+        return count
+    count = subsetSum(arr, n, i+1,sum-arr[i], count)
+    count = subsetSum(arr, n, i+1,sum, count)
+    return count
+arr=[]
+size=int(input())
+for j in range(size):
+    value=int(input())
+    arr.append(value)
+sum = int(input())
+n = len(arr)
+print(subsetSum(arr, n, 0, sum, 0))
 ```
 
 ## Output:
+![438894126-6940c284-cdb9-4f68-a7ef-bb4997caa840](https://github.com/user-attachments/assets/8aacbc72-8de2-4b57-a52b-07ce398eb94e)
 
 
 
 ## Result:
-The Subset Sum program executed successfully, and the result was determined based on whether a subset matching the target sum was found or not.
+The Subset Sum Problem was successfully implemented using recursion. The program correctly counted and displayed the number of subsets whose sum equals the given target.
