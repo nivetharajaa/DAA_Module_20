@@ -15,7 +15,6 @@ To implement the Rat in a Maze problem using backtracking and find all possible 
 
 ## Program:
 ```
-/*
 Program to implement Rat in a Maze.
 Developed by: Nivetha A
 Register Number:212222230101  
@@ -56,7 +55,7 @@ if __name__ == "__main__":
             [1, 1, 1, 1]]
     
     solveMaze(maze)
-*/
+
 ```
 
 ## Output:
