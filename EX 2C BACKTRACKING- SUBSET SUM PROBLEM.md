@@ -14,7 +14,7 @@ To demonstrate that the sum of the subset of a given set is equal to the given s
 2. If i == n (end of array):
    a. If sum == 0, increment count
    b. Return count
-
+   
 3. Recur twice:
   a. Include arr[i] in the sum → sum - arr[i]
   b. Exclude arr[i] from the sum → sum remains the same
