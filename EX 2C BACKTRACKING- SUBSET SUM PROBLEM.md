@@ -19,9 +19,9 @@ To demonstrate that the sum of the subset of a given set is equal to the given s
   a. Include arr[i] in the sum → sum - arr[i]
   b. Exclude arr[i] from the sum → sum remains the same
 
- 4. Return the total count of both recursive calls.
-
- 5.Call the function from main with i = 0 and count = 0. 
+4. Return the total count of both recursive calls.
+  
+5.Call the function from main with i = 0 and count = 0. 
    
 
 ## Program:
